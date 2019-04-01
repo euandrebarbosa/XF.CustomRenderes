@@ -7,7 +7,7 @@
 
     <StackLayout
         VerticalOptions="CenterAndExpand"
-        HorizontalOptions="CenterAndExpand">
+        HorizontalOptions="FillAndExpand">
         <shared:TextInputView 
             Icon="ic_avatar.png"
             PlaceholderText="Insira seu usuário"/>
