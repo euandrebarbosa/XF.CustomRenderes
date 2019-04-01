@@ -1,62 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:renderers="clr-namespace:XF.CustomRenderes.CustomRenderes;assembly=XF.CustomRenderes"
+             xmlns:shared="clr-namespace:XF.CustomRenderes.Views.Shared;assembly=XF.CustomRenderes"
              x:Class="XF.CustomRenderes.MainPage"
              BackgroundColor="#0DCDA7">
 
-    <StackLayout>
-        <Frame  
-            HeightRequest="33"
-            BackgroundColor="White"
-            IsClippedToBounds="False"
-            HasShadow="True"
-            CornerRadius="6"
-            Margin="10"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand">
-            <StackLayout 
-                Orientation="Horizontal">
-                <Image 
-                    Source="ic_avatar.png"
-                    HeightRequest="32"
-                    WidthRequest="32"
-                    HorizontalOptions="Start"/>
-                <renderers:BorderlessEntry
-                    TextColor="#676767"
-                    HorizontalOptions="StartAndExpand"
-                    Placeholder="Informe seu nome"
-                    PlaceholderColor="#d3d3d3"
-                    Margin="10,0,0,-7">
-                </renderers:BorderlessEntry>
-            </StackLayout>
-        </Frame>
+    <StackLayout
+        VerticalOptions="CenterAndExpand"
+        HorizontalOptions="CenterAndExpand">
+        <shared:TextInputView 
+            Icon="ic_avatar.png"
+            PlaceholderText="Insira seu usuário"/>
 
-        <Frame  
-            HeightRequest="33"
-            BackgroundColor="White"
-            IsClippedToBounds="False"
-            HasShadow="True"
-            CornerRadius="6"
-            Margin="10"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand">
-            <StackLayout 
-                Orientation="Horizontal">
-                <Image 
-                    Source="ic_password.png"
-                    HeightRequest="32"
-                    WidthRequest="32"
-                    HorizontalOptions="Start"/>
-                <renderers:BorderlessEntry
-                    TextColor="#676767"
-                    HorizontalOptions="StartAndExpand"
-                    Placeholder="Informe sua senha"
-                    PlaceholderColor="#d3d3d3"
-                    Margin="10,0,0,-7">
-                </renderers:BorderlessEntry>
-            </StackLayout>
-        </Frame>
+        <shared:TextInputView 
+            Icon="ic_password.png"
+            PlaceholderText="Insira sua senha"/>
     </StackLayout>
 
 </ContentPage>

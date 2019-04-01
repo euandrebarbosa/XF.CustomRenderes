@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:renderers="clr-namespace:XF.CustomRenderes.CustomRenderes;assembly=XF.CustomRenderes"
+             x:Class="XF.CustomRenderes.Views.Shared.TextInputView">
+    <ContentView.Content>
+        <StackLayout>
+            <Frame  
+                HasShadow="True"
+                CornerRadius="6"
+                IsClippedToBounds="False"
+                BackgroundColor="White"
+                HeightRequest="33"
+                Margin="12,0,12,6"
+                Padding="8"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand">
+                <StackLayout 
+                    Orientation="Horizontal">
+                    <Image 
+                        x:Name="imgIcon"
+                        HeightRequest="32"
+                        WidthRequest="32"
+                        HorizontalOptions="Start"/>
+                    <renderers:BorderlessEntry
+                        x:Name="entryText"
+                        TextColor="#676767"
+                        PlaceholderColor="#d3d3d3"
+                        Margin="10,0,0,-7"
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
